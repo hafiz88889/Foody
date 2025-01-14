@@ -105,7 +105,7 @@ class HomePage extends StatelessWidget {
                 width: double.infinity,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
-                  children: [
+                  children: const [
                     BuildCategoryship(label: "All", isSelect: true),
                     BuildCategoryship(label: "Pizza", isSelect: false),
                     BuildCategoryship(label: "Burger", isSelect: false),
