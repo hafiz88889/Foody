@@ -174,7 +174,7 @@ class ProductDetailsPage extends StatelessWidget {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: Container(
-        padding: EdgeInsets.all(5),
+        padding: const EdgeInsets.all(5),
         height: 80,
         decoration: BoxDecoration(
          color: MyColor.whiteColor,
@@ -182,7 +182,7 @@ class ProductDetailsPage extends StatelessWidget {
             BoxShadow(color: MyColor.greyColor.withAlpha(200),
             spreadRadius: 1,
               blurRadius: 10,
-              offset: Offset(0, -5)
+              offset:const  Offset(0, -5)
             ),
           ],
           ),
@@ -201,7 +201,7 @@ class ProductDetailsPage extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: MyColor.deepOrangeColor,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-                    padding: EdgeInsets.symmetric(vertical: 16),
+                    padding: const EdgeInsets.symmetric(vertical: 16),
 
                   ),
                     onPressed: (){}, 

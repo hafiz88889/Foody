@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:foody/config/utils/color_items.dart';
 import 'package:foody/config/utils/image_items.dart';
 import 'package:foody/config/utils/text_style_items.dart';
+import 'package:foody/ui/screen/home_screen/widget/buildCategoryship.dart';
 import 'package:foody/ui/screen/home_screen/widget/food_card.dart';
 import 'package:foody/ui/screen/home_screen/widget/recoment_card_widget.dart';
 import 'package:foody/ui/screen/product_details_page/screen/screen_page.dart';
@@ -105,13 +106,14 @@ class HomePage extends StatelessWidget {
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
-                    _buildCategoryship("All", true),
-                    _buildCategoryship("Pizza", false),
-                    _buildCategoryship("Burger", false),
-                    _buildCategoryship("Sandwise", false),
-                    _buildCategoryship("Sharma", false),
-                    _buildCategoryship("Chicken", false),
-                    _buildCategoryship("Chicken", false),
+                    BuildCategoryship(label: "All", isSelect: true),
+                    BuildCategoryship(label: "Pizza", isSelect: false),
+                    BuildCategoryship(label: "Burger", isSelect: false),
+                    BuildCategoryship(label: "Chicken", isSelect: false),
+                    BuildCategoryship(label: "Sharma", isSelect: false),
+                    BuildCategoryship(label: "Drink", isSelect: false),
+
+
                   ],
                 ),
               ),
@@ -164,20 +166,6 @@ class HomePage extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
-  }
-
-  Widget _buildCategoryship(String label, bool isSelect) {
-    return Padding(
-      padding: const EdgeInsets.all(10),
-      child: Chip(
-        backgroundColor:
-            isSelect ? MyColor.deepOrangeColor : MyColor.whiteColor,
-        label: Text(label,
-            style: TextStyle(
-              color: isSelect ? MyColor.whiteColor : MyColor.blackColor,
-            )),
       ),
     );
   }
