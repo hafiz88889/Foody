@@ -5,4 +5,5 @@ class MyImage {
   static String searchIcon = "assets/images/searchIcon.png";
   static String pizza = "assets/images/pissa.jpg";
   static String pizza1 = "assets/images/pissal.png";
+  static String burger = "assets/images/burger.png";
 }

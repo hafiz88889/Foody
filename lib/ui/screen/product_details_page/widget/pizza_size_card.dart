@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:foody/config/utils/color_items.dart';
 import 'package:foody/config/utils/text_style_items.dart';
 
-class PizzaSizeCard extends StatelessWidget {
+class PizzaCard extends StatelessWidget {
   final String size;
   final bool isSelected;
-  const PizzaSizeCard({super.key,
+  const PizzaCard({super.key,
   required this.isSelected,
     required this.size
   });

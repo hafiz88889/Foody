@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:foody/config/utils/color_items.dart';
+import 'package:foody/config/utils/global_text.dart';
 import 'package:foody/config/utils/image_items.dart';
 import 'package:foody/config/utils/text_style_items.dart';
 import 'package:foody/ui/screen/product_details_page/widget/name_price_widget.dart';
@@ -43,7 +44,7 @@ class ProductDetailsPage extends StatelessWidget {
                 child: Icon(
                   Icons.arrow_back,
                   color: MyColor.blackColor,
-                  size: 20,
+                  size: 30,
                 ),
               ),
             ),
@@ -58,7 +59,7 @@ class ProductDetailsPage extends StatelessWidget {
                   child: Icon(
                     Icons.favorite_border,
                     color: MyColor.buttonColor,
-                    size: 20,
+                    size: 30,
                   ),
                 ),
               )
@@ -79,7 +80,7 @@ class ProductDetailsPage extends StatelessWidget {
                       children: [
                         Expanded(
                           child: Text(
-                            "Dominos Pizza",
+                            MyText.dominos,
                             style: myTextStyle24,
                           ),
                         ),
@@ -100,7 +101,7 @@ class ProductDetailsPage extends StatelessWidget {
                                 width: 4,
                               ),
                               Text(
-                                "4.9",
+                                MyText.rate,
                                 style: myTextStyle14,
                               )
                             ],
@@ -111,58 +112,58 @@ class ProductDetailsPage extends StatelessWidget {
                     const SizedBox(
                       height: 8,
                     ),
-                    const Row(
+                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        InfoChip(icon: Icons.access_time, title: "20-25 min"),
+                        InfoChip(icon: Icons.access_time, title: MyText.time),
                         InfoChip(
                             icon: Icons.local_fire_department,
-                            title: "150 cal"),
-                        InfoChip(icon: Icons.location_on, title: "1-2 km"),
+                            title: MyText.onefifty),
+                        InfoChip(icon: Icons.location_on, title: MyText.km),
                       ],
                     ),
                     const SizedBox(
                       height: 12,
                     ),
                     Text(
-                      "Description",
+                      MyText.description,
                       style: myTextStyle24,
                     ),
                     const SizedBox(
                       height: 8,
                     ),
                     Text(
-                      "Could you please clarify what type of food description you are looking for? For example, are you asking for a description of a specific dish, a type of cuisine, or perhaps the flavor profile of a particular ingredient?",
+                      MyText.descriptionall,
                       style: myTextStyle14,
                     ),
                     const SizedBox(
                       height: 20,
                     ),
                     Text(
-                      "Size",
+                      MyText.size,
                       style: myTextStyle20,
                     ),
                     const SizedBox(
                       height: 12,
                     ),
-                    const Row(
+                     Row(
                       children: [
-                        PizzaSizeCard(isSelected: true, size: "S"),
-                        SizedBox(width: 12,),
-                        PizzaSizeCard(isSelected: false, size: "M"),
-                        SizedBox(width: 12,),
-                        PizzaSizeCard(isSelected: false, size: "L"),
+                        PizzaCard(isSelected: true, size: MyText.s),
+                      const SizedBox(width: 12,),
+                        PizzaCard(isSelected: false, size: MyText.m),
+                        const SizedBox(width: 12,),
+                        PizzaCard(isSelected: false, size: MyText.l),
                       ],
                     ),
                     const SizedBox(height: 20,),
                     Text(
-                      "Extra",
+                    MyText.extra,
                       style: myTextStyle20,
                     ),
                     const SizedBox(height: 12,),
-                    const NamePriceWidget(name: "Extra chese", price: "\$+2.99"),
-                    const NamePriceWidget(name: "Mashroom", price: "\$+5.99"),
-                    const NamePriceWidget(name: "Cold Dring", price: "\$+0.99"),
+                     NamePriceWidget(name: MyText.extraChese, price:  MyText.twoPrice),
+                     NamePriceWidget(name:  MyText.masroom, price:  MyText.five),
+                     NamePriceWidget(name:  MyText.cold, price:  MyText.one),
                     const SizedBox(height: 100,)
 
                   ],
@@ -191,8 +192,8 @@ class ProductDetailsPage extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Total Price",style: myTextStyle14.copyWith(color: MyColor.greyColor),),
-                Text("\$109.99",style: myTextStyle20.copyWith(color: MyColor.deepOrangeColor),)
+                Text(MyText.totalPrice,style: myTextStyle14.copyWith(color: MyColor.greyColor),),
+                Text(MyText.totalPriceTk,style: myTextStyle20.copyWith(color: MyColor.deepOrangeColor),)
               ],
             ),
             const SizedBox(width: 20,),
@@ -202,12 +203,11 @@ class ProductDetailsPage extends StatelessWidget {
                     backgroundColor: MyColor.deepOrangeColor,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
                     padding: const EdgeInsets.symmetric(vertical: 16),
-
                   ),
                     onPressed: (){}, 
-                    child: Text("Add to cart",style: myTextStyle18.copyWith(color: MyColor.whiteColor),)
+                    child: Text(MyText.addToCart,style: myTextStyle18.copyWith(color: MyColor.whiteColor),)
                 )
-            )
+            ),
           ],
         ),
         ),

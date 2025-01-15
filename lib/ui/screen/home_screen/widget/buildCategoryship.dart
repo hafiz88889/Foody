@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:foody/config/utils/color_items.dart';
 
-class BuildCategoryship extends StatelessWidget {
+class BuildCategoryShip extends StatelessWidget {
   final String label;
   final bool isSelect;
-  const BuildCategoryship({super.key,
+  const BuildCategoryShip({super.key,
   required this.label,
     required this.isSelect
   });

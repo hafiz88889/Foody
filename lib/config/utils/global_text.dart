@@ -1,0 +1,36 @@
+class MyText{
+  static String deliciousFood="Delicious Food";
+  static String delivery="Delivery to your door";
+  static String search="Search here...";
+  static String all="All";
+  static String pizza="Pizza";
+  static String burger="Burger";
+  static String chicken="Chicken";
+  static String sharma="Sharma";
+  static String drink="Drink";
+  static String popularNow="Popular Now";
+  static String dominos="Dominos Pizza";
+  static String rate="4.5";
+  static String time="15-25 minuts";
+  static String price="\$12.99";
+  static String recommended="Recommended";
+  static String price1="\$9.99";
+  static String description="Description";
+  static String onefifty="150 cal";
+  static String km="1.2km";
+  static String size="Size";
+  static String s="S";
+  static String m="M";
+  static String l="L";
+  static String extra="Extra";
+  static String extraChese="Extra Cheese";
+  static String masroom="Masroom";
+  static String cold="Cold drinks";
+  static String twoPrice="\+2.99";
+  static String five="\+5.99";
+  static String one="\+0.99";
+  static String totalPriceTk="\$109.99";
+  static String totalPrice="Total Price";
+  static String addToCart="Add to cart";
+  static String descriptionall="Could you please clarify what type of food description you are looking for? For example, are you asking for a description of a specific dish, a type of cuisine, or perhaps the flavor profile of a particular ingredient?";
+}

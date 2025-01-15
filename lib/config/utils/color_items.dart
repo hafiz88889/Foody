@@ -9,4 +9,5 @@ class MyColor {
   static Color blackColor = const Color(0xff161417);
   static Color ratingColor = const Color(0xffA59548);
   static Color deepOrangeColor = const Color(0xffFF6F00);
+  static Color redColor = const Color(0xffFF0000);
 }
